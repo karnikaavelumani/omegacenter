@@ -3,7 +3,10 @@
 <footer>
 	<div class="footer">
 		<div class="content has-text-centered">
-			<p>Made with 💖 by Karnikaa Velumani</p>
+			<p>
+				Made with 💖 by <a href="https://karni.codes/">Karnikaa Velumani</a> and
+				<a href="https://etok.codes/">Ethan Davidson</a>
+			</p>
 		</div>
 	</div>
 </footer>
