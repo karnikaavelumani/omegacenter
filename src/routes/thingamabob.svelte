@@ -41,97 +41,31 @@
 
     .thingamabob-content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-    }
-
-    /* .thingamabob-image {
-        display: grid;
-        justify-self: center;
-        align-items: center;
-    } */
-
-    @media (max-width: 768px) {
-        .thingamabob-content {
-            grid-template-columns: 1fr;
-        }
-    }
-    /* .thingamabob-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .thingamabob-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .thingamabob-text {
-        flex: 1;
-        padding: 20px;
-    }
-
-    .thingamabob-header h1 {
-        font-size: 24px;
-        margin: 0;
-    }
-
-    .thingamabob-rating p {
-        font-size: 16px;
-        margin: 10px 0;
-    }
-
-    .thingamabob-description p {
-        font-size: 16px;
-        margin: 10px 0;
-    }
-
-    .thingamabob-features h2 {
-        font-size: 20px;
-        margin: 10px 0;
-    }
-
-    .thingamabob-features ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    .thingamabob-features li {
-        font-size: 16px;
-    }
-
-    .thingamabob-price h2 {
-        font-size: 20px;
-        margin: 10px 0;
-    }
-
-    .thingamabob-price p {
-        font-size: 24px;
-        margin: 10px 0;
+        grid-template-columns: 2fr 1fr;
+        margin: 0 5em 0 5em;
     }
 
     .thingamabob-image {
-        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100vh;
+        max-width: 50vw;
     }
 
-    @media (max-width: 768px) {
-        .thingamabob-container {
-            flex-direction: column;
+    .thingamabob-text {
+        padding: 20px;
+    }
+
+    @media (max-width: 1020px) {
+        .thingamabob-content {
+            grid-template-columns: 1fr;
+            margin: 0;
         }
-        .thingamabob-text {
-            padding: 20px;
-            text-align: center;
-        }
+
         .thingamabob-image {
-            margin-top: 20px;
-            text-align: center;
+            max-width: 100vw;
         }
-    } */
+    }
   </style>
   

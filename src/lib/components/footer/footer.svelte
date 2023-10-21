@@ -9,7 +9,6 @@
 
 <style>
     footer {
-        background-color: #d3d3d3;
         color: #000;
         padding: 20px 0;
     }

@@ -11,7 +11,6 @@
 
 <style>
     nav {
-        background-color: #d3d3d3;
         padding: 10px 0;
     }
 

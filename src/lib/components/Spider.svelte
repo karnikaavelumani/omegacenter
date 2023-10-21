@@ -5,15 +5,20 @@
 
 <T.PerspectiveCamera
   makeDefault
-  position={[10, 10, 10]}
-  fov={25}
+  position={[10, 0, 10]}
+  fov={20}
 >
   <OrbitControls
-    autoRotate
     enableDamping
+    enableZoom={false}
   />
 </T.PerspectiveCamera>
 
 <T.AmbientLight />
 
-<GLTF url="/assets/test.glb" />
+<T.DirectionalLight
+  castShadow
+  position={[5, 5, 5]}
+/>
+
+<GLTF url="/assets/spider.glb" />

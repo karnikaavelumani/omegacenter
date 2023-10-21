@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700');
 
 html,
 body,
 #svelte {
-  font-family: 'Oswald', 'Verdana', 'Helvetica', sans-serif;
+  background-color: #dedede;
+}
+
+html,
+body,
+#svelte {
+  font-family: 'Poppins', 'Verdana', 'Helvetica', sans-serif;
   font-display: fallback;
 }
