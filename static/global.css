@@ -3,12 +3,12 @@
 html,
 body,
 #svelte {
-  background-color: #dedede;
+	background-color: #dedede;
 }
 
 html,
 body,
 #svelte {
-  font-family: 'Poppins', 'Verdana', 'Helvetica', sans-serif;
-  font-display: fallback;
+	font-family: 'Poppins', 'Verdana', 'Helvetica', sans-serif;
+	font-display: fallback;
 }
