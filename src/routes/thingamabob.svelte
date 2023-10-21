@@ -16,8 +16,9 @@
 		features: ['Knobs', 'Buttons', 'Lights', 'More']
 	};
 
-	const formattedStars =
-		'⭐'.repeat(Math.floor(data.stars)) + '✩'.repeat(Math.floor(data.maxStars - data.stars));
+	const formattedStars = Array.from({ length: data.maxStars }, (_, i) =>
+		i < Math.floor(data.stars) ? '⭐' : '✩'
+	).join('');
 </script>
 
 <section class="thingamabob-container">
