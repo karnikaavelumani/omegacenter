@@ -16,4 +16,4 @@
 
 <T.AmbientLight />
 
-<GLTF url="/assets/spider.glb" />
+<GLTF url="/assets/test.glb" />
