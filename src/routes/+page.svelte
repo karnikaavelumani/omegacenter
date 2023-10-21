@@ -1,9 +1,12 @@
 <script>
-  import Thingamabob from "./thingamabob.svelte";
+	import Thingamabob from './thingamabob.svelte';
+	import Spider from '$lib/components/Spider.svelte';
 </script>
 
 <svelte:head>
-  <title>Omegacenter</title>
+	<title>Omegacenter</title>
 </svelte:head>
 
-<Thingamabob />
+<Thingamabob>
+	<Spider />
+</Thingamabob>

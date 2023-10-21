@@ -1,24 +1,17 @@
 <script lang="ts">
-  import { T } from '@threlte/core'
-  import { Environment, GLTF, OrbitControls } from '@threlte/extras'
+	import { Canvas } from '@threlte/core';
+	import { T } from '@threlte/core';
+	import { GLTF, OrbitControls } from '@threlte/extras';
 </script>
 
-<T.PerspectiveCamera
-  makeDefault
-  position={[10, 0, 10]}
-  fov={20}
->
-  <OrbitControls
-    enableDamping
-    enableZoom={false}
-  />
-</T.PerspectiveCamera>
+<Canvas>
+	<T.PerspectiveCamera makeDefault position={[10, 0, 10]} fov={20}>
+		<OrbitControls enableDamping enableZoom={false} />
+	</T.PerspectiveCamera>
 
-<T.AmbientLight />
+	<T.AmbientLight />
 
-<T.DirectionalLight
-  castShadow
-  position={[5, 5, 5]}
-/>
+	<T.DirectionalLight castShadow position={[5, 5, 5]} />
 
-<GLTF url="/assets/spider.glb" />
+	<GLTF url="/assets/spider.glb" />
+</Canvas>

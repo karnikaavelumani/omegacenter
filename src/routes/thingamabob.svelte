@@ -1,38 +1,56 @@
 <script lang="ts">
-	import App from '$lib/components/App.svelte';
+	export let data: {
+		title: string;
+		description: string;
+		price: number;
+		stars: number;
+		maxStars: number;
+		features: string[];
+	} = {
+		title: 'Thingamabob',
+		description:
+			'Check out our latest release reaching rave reviews from many buyers. This intricate device is a captivating blend of countless knobs, buttons, mesmerizing lights, and so much more. Grab one today before they are all sold out!',
+		price: 99.99,
+		stars: 4.5,
+		maxStars: 5,
+		features: ['Knobs', 'Buttons', 'Lights', 'More']
+	};
+
+	const formattedStars =
+		'⭐'.repeat(Math.floor(data.stars)) + '✩'.repeat(Math.floor(data.maxStars - data.stars));
 </script>
 
 <section class="thingamabob-container">
 	<div class="thingamabob-content">
 		<div class="thingamabob-image">
-			<App />
+			<slot />
 		</div>
 		<div class="thingamabob-text">
 			<div class="thingamabob-header">
-				<h1>Thingamabob</h1>
+				<h1>{data.title}</h1>
 			</div>
 			<div class="thingamabob-rating">
-				<p>⭐⭐⭐⭐✩ 4.5/5 stars</p>
+				<p>{formattedStars} {data.stars}/{data.maxStars} stars</p>
 			</div>
 			<div class="thingamabob-description">
-				<p>
-					Check out our latest release reaching rave reviews from many buyers. This intricate device
-					is a captivating blend of countless knobs, buttons, mesmerizing lights, and so much more.
-					Grab one today before they are all sold out!
-				</p>
+				<p>{data.description}</p>
 			</div>
 			<div class="thingamabob-features">
 				<h2>Features</h2>
 				<ul>
-					<li>Knobs</li>
-					<li>Buttons</li>
-					<li>Lights</li>
-					<li>More</li>
+					{#each data.features as feature}
+						<li>{feature}</li>
+					{/each}
 				</ul>
 			</div>
 			<div class="thingamabob-price">
 				<h2>Price</h2>
-				<p>$99.99</p>
+				<p>
+					{data.price.toLocaleString('en-US', {
+						style: 'currency',
+						currency: 'USD'
+					})}
+				</p>
 			</div>
 		</div>
 	</div>
@@ -70,7 +88,7 @@
 		}
 
 		.thingamabob-image {
-			max-width: 100vw;
+			max-width: 80vw;
 		}
 	}
 </style>
