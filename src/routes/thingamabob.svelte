@@ -82,6 +82,25 @@
 		padding: 20px;
 	}
 
+	.thingamabob-header,
+	.thingamabob-features,
+	.thingamabob-price {
+		font-weight: 500;
+	}
+
+	.thingamabob-rating {
+		font-weight: 600;
+	}
+
+	.thingamabob-description {
+		font-size: 12px;
+	}
+
+	.thingamabob-features ul {
+		font-size: 12px;
+		font-weight: 300;
+	}
+
 	@media (max-width: 1020px) {
 		.thingamabob-content {
 			grid-template-columns: 1fr;
@@ -89,6 +108,7 @@
 		}
 
 		.thingamabob-image {
+			max-height: 50vh;
 			max-width: 80vw;
 		}
 	}
