@@ -1,21 +1,9 @@
-<script lang="ts">
-  import App from '$lib/components/App.svelte';
+<script>
+  import Thingamabob from "./thingamabob.svelte";
 </script>
 
-<div>
-  <App />
-</div>
+<svelte:head>
+  <title>Omegacenter</title>
+</svelte:head>
 
-<style>
-  :global(body) {
-    margin: 0;
-  }
-
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50vw;
-    height: 50vh;
-  }
-</style>
+<Thingamabob />
