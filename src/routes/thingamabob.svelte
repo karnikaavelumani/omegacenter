@@ -74,7 +74,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		
 		max-height: 100vh;
 		max-width: 50vw;
 	}
@@ -109,8 +108,8 @@
 		}
 
 		.thingamabob-image {
-			max-height: 50vh;
 			max-width: 100vw;
+			height: 30vh;
 		}
 	}
 </style>
