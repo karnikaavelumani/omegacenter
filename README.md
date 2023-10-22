@@ -1,38 +1,19 @@
-# create-svelte
+# Omegacenter
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Creators
+The obscurities-for-sale are curated by @karnikaavelumani and @EthanThatOneKid
 
-## Creating a project
+## What sparked our imagination?
+The inspiration for this website comes from the idea of an alien pretending to be a human and building a technology store dedicated to selling products. However, the catch is that none of these products are actually functional.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## What is the Omegacenter?
+The Omegacenter is a mashup of the Omegamart from Las Vegas and the Microcenter. The Omegamart is an exhibition of a supermarket that sells extremely strange products. The Microcenter is a major technology store that provides multiple tech products. 
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Why Threlte?
+Svelte has always been an amazing framework to work with when it came to creating fast and simple projects. Threlte gave us the ability to incorporate our own blender art into our websites and give it life! This was a fun experiment in learning more about Threlte and utilizing it to our advantage.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Will there be more?
+Version 1.0 of Omegamart will be submitted for the Threlte Hackathon. However, we will continue updating and improving our website to fit what we pictured in our head. This opportunity gave us the ability to jumpstart this image and actually create it in real life.
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Version 1.0
+![omegacenter1.0](https://github.com/karnikaavelumani/omegacenter/assets/60043611/bf02dd3c-519e-49c5-946a-8631f1c3898d)
