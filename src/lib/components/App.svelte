@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { Canvas } from '@threlte/core';
-	import Spider from './Spider.svelte';
+	import Model from './Model.svelte';
 </script>
 
 <Canvas>
-	<Spider />
+	<Model />
 </Canvas>

@@ -1,6 +1,6 @@
 <script>
 	import Thingamabob from './thingamabob.svelte';
-	import Spider from '$lib/components/Spider.svelte';
+	import Spider from '$lib/components/Model.svelte';
 </script>
 
 <svelte:head>
