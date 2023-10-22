@@ -6,7 +6,7 @@
 
 <Canvas>
 	<T.PerspectiveCamera makeDefault position={[10, 5, 10]} fov={40}>
-		<OrbitControls enableDamping enableZoom={false} />
+		<OrbitControls enableDamping autoRotate enableZoom={false} />
 	</T.PerspectiveCamera>
 
 	<T.AmbientLight />
